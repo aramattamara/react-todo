@@ -1,14 +1,17 @@
 import './App.css'
 import * as React from 'react';
-import TodoList from "./TodoList.jsx";
+import {TodoList} from "./Components/TodoList.jsx";
+import {AddTodoForm} from "./Components/AddTodoForm.jsx";
 
-function App() {
+
+export function App() {
     return (
         <>
-            <h2>My list</h2>
+            <h2>My mustDo list</h2>
+            <hr/>
+            <AddTodoForm/>
+            <hr/>
             <TodoList/>
         </>
   )
 }
-
-export default App
