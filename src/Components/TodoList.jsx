@@ -20,7 +20,7 @@ export function TodoList() {
     return (
         <ul>
             {toDoList.map (function (item) {
-                return <TodoListItem key={item.id.toString()} todo={item}/>;
+                return <TodoListItem key={item.id} todo={item}/>;
             })}
         </ul>
     );
